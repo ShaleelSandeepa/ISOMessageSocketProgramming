@@ -3,21 +3,35 @@ import org.jpos.iso.ISOMsg;
 import org.jpos.iso.ISOUtil;
 import org.jpos.iso.packager.GenericPackager;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Decoder {
 
     GenericPackager packager;
     byte[] isoMessageBytes;
     ArrayList<String> decodedMessage = new ArrayList<>();
+    private static final Logger logger = Logger.getLogger(Client.class.getName());
 
     public Decoder(String packager, String isoMessageBytes) {
+
+        try {
+            FileHandler fileHandler = new FileHandler("program.log", true); // true for append mode
+            fileHandler.setLevel(Level.ALL);
+            logger.addHandler(fileHandler);
+        } catch (IOException e) {
+            logger.log(Level.SEVERE, "Error setting up file handler: " + e.getMessage(), e);
+        }
+
         try {
             this.packager = new GenericPackager(packager);
             this.isoMessageBytes = ISOUtil.hex2byte(isoMessageBytes);
         } catch (ISOException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "Error creating Decoder: " + e.getMessage(), e);
         }
     }
 
@@ -48,7 +62,7 @@ public class Decoder {
                 }
             }
         } catch (ISOException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "Error decoding ISO message: " + e.getMessage(), e);
         }
     }
 

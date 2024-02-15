@@ -4,11 +4,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
 import java.net.Socket;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Client {
 
     private static final String SERVER_ADDRESS = "localhost";
     private static final int PORT = 9002;
+    private static final Logger logger = Logger.getLogger(Client.class.getName());
 
     JFrame frame = new JFrame("Chatter App");
     JPanel topPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
@@ -25,6 +29,14 @@ public class Client {
     String sendMessage;
 
     public Client() {
+
+        try {
+            FileHandler fileHandler = new FileHandler("program.log", true); // true for append mode
+            fileHandler.setLevel(Level.ALL);
+            logger.addHandler(fileHandler);
+        } catch (IOException e) {
+            logger.log(Level.SEVERE, "Error setting up file handler: " + e.getMessage(), e);
+        }
 
         topPanel.add(btnSendTo);
         topPanel.add(messageSendTo);
@@ -50,6 +62,7 @@ public class Client {
                     messageArea.append("To " + messageSendTo.getText() + ": " + sendMessage + "\n");
                 }
                 textField.setText("");
+                logger.info("Sent message to " + receiver + ": " + sendMessage);
             }
         });
 
@@ -65,18 +78,21 @@ public class Client {
     }
 
     private String getName() {
-        return JOptionPane.showInputDialog(
+        String name = JOptionPane.showInputDialog(
                 frame,
                 "Choose a screen name : ",
                 "Screen name selection",
                 JOptionPane.PLAIN_MESSAGE
         );
+        logger.info("Username chosen: " + name);
+        return name;
     }
 
     private String getAllClients() throws IOException {
 
         writer.println("REQUESTCLIENTS");
         String clients = serverReader.readLine();
+        logger.info("Received list of clients: " + clients);
         return clients;
     }
 
@@ -110,14 +126,14 @@ public class Client {
             client.serverReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             client.writer = new PrintWriter(socket.getOutputStream(), true);
 
-            System.out.println("Enter your name : ");
             String userName = client.getName();
             // pass username to server for validate
             client.writer.println(userName);
+            logger.info("Pass username '" + userName + "' to server for validate");
 
             // check username accepted by the server
             if (client.serverReader.readLine().equals("ACCEPTED")) {
-                System.out.println("Username '" + userName + "' accepted by server");
+                logger.info("Username '" + userName + "' accepted by server");
                 client.frame.setTitle("Chatter App | " + userName);
                 client.textField.setEditable(true);
                 client.messageSendTo.setEditable(true);
@@ -129,10 +145,12 @@ public class Client {
                     while (true) {
                         String message = client.serverReader.readLine();
                         if (message == null) {
+                            logger.warning("Null message !");
                             break;
                         }
                         if (message.startsWith("0")) {
                             client.messageArea.append(message.substring(1) + "\n");
+                            logger.info("Append message to message area");
 
                         } else {
                             // get message start index from input message
@@ -143,16 +161,18 @@ public class Client {
                                 Decoder visa = new Decoder("visapack.xml", message.substring(messageStarts));
                                 String decodedVisa = visa.getDecodedMsg().toString();
                                 client.messageArea.append(sender + decodedVisa + "\n");
+                                logger.info("VISA ISO8583 Message successfully decoded");
 
                             } else if (message.startsWith("2")) {
                                 Decoder master = new Decoder("mastercard.xml", message.substring(messageStarts));
                                 String decodedMaster = master.getDecodedMsg().toString();
                                 client.messageArea.append(sender + decodedMaster + "\n");
+                                logger.info("MASTER ISO8583 Message successfully decoded");
                             }
                         }
                     }
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    logger.log(Level.SEVERE, "Error received message: " + e.getMessage(), e);
                 }
             }).start();
 
@@ -167,7 +187,7 @@ public class Client {
             socket.close();
 
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "Error starting message listening Thread: " + e.getMessage(), e);
         }
 
     }

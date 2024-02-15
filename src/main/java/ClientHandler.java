@@ -3,17 +3,30 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class ClientHandler implements Runnable {
 
     private final Socket clientSocket;
     private final BufferedReader reader;
     private final PrintWriter writer;
+    private final Logger logger = Logger.getLogger(ClientHandler.class.getName());
 
     public ClientHandler(Socket clientSocket) throws IOException {
         this.clientSocket = clientSocket;
         this.reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         this.writer = new PrintWriter(clientSocket.getOutputStream(), true);
+
+        // Configure logger with file handler
+        try {
+            FileHandler fileHandler = new FileHandler("program.log", true); // true for append mode
+            fileHandler.setLevel(Level.ALL);
+            logger.addHandler(fileHandler);
+        } catch (IOException e) {
+            logger.log(Level.SEVERE, "Error setting up file handler: " + e.getMessage(), e);
+        }
     }
 
     @Override
@@ -30,9 +43,9 @@ public class ClientHandler implements Runnable {
                 Server.addClient(username, this);
                 if (Server.clients.containsKey(username)) {
                     writer.println("ACCEPTED");
+                    logger.info("User '" + username + "' connected.");
                 }
             }
-            System.out.println("User '" + username + "' connected.");
 
             while (true) {
 
@@ -48,15 +61,17 @@ public class ClientHandler implements Runnable {
 
                 // send message from server to receiver
                 Server.sendMessage(type, username, receiver, content);
+                logger.info("Message from " + username + " to " + receiver + ": " + content);
+
             }
 
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "Error in client handling: " + e.getMessage(), e);
         } finally {
             try {
                 clientSocket.close();
             } catch (IOException e) {
-                e.printStackTrace();
+                logger.log(Level.SEVERE, "Error closing client socket: " + e.getMessage(), e);
             }
         }
     }
