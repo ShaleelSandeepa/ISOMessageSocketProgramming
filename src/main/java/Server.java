@@ -10,6 +10,7 @@ public class Server {
     private static final int PORT = 9002;
     public static Map<String, ClientHandler> clients = new HashMap<>();
     private static final Logger logger = Logger.getLogger(Server.class.getName());
+    private static ClientHandler clientHandler;
 
     static {
         // Configure logger with file handler
@@ -48,20 +49,41 @@ public class Server {
 
     // send message to relevant client
     public static void sendMessage(String type, String sender, String receiver, String message) {
-        // get handler object from clients map
-        ClientHandler clientHandler = clients.get(receiver);
 
-        if (clientHandler != null) {
-            // pass message to receiving client
-            clientHandler.sendMessage(type + sender + ": " + message);
-            logger.info("Message sent to " + receiver + " from " + sender + ": " + message);
+        // check if sender send the broadcast message or not
+        if (receiver.equals("BROADCAST")) {
+            for (ClientHandler clientHandler : clients.values()) {
+                // do not send the message again to sender
+                if (clients.get(sender) != clientHandler) {
+                    clientHandler.sendMessage(type + sender + ": " + message);
+                    System.out.println(sender);
+                    System.out.println(clientHandler);
+                    System.out.println(clients.get(sender));
+                }
+            }
         } else {
-            logger.warning("User '" + receiver + "' not found.");
+            // get handler object from clients map
+            clientHandler = clients.get(receiver);
 
-            // send response to sender
-            ClientHandler clientSender = clients.get(sender);
-            clientSender.sendMessage("0" + "user not found !");
-            logger.warning("Response sent to " + sender + ": User not found.");
+            if (clientHandler != null) {
+                // pass message to receiving client
+                clientHandler.sendMessage(type + sender + ": " + message);
+                logger.info("Message sent to " + receiver + " from " + sender + ": " + message);
+            } else {
+                logger.warning("User '" + receiver + "' not found !");
+
+                // send response to sender
+                ClientHandler clientSender = clients.get(sender);
+                clientSender.sendMessage("0" + "user not found !");
+                logger.warning("Response sent to " + sender + ": User not found !");
+            }
+        }
+
+    }
+
+    public static void sendClients(String req) {
+        for (ClientHandler clientHandler : clients.values()) {
+            clientHandler.sendMessage(req + clients.keySet());
         }
     }
 }

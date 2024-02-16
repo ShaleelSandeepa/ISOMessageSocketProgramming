@@ -44,7 +44,12 @@ public class ClientHandler implements Runnable {
                 if (Server.clients.containsKey(username)) {
                     writer.println("ACCEPTED");
                     logger.info("User '" + username + "' connected.");
+
                 }
+            }
+
+            if (reader.readLine().equals("REQUEST")) {
+                Server.sendClients("USER");
             }
 
             while (true) {
@@ -79,6 +84,7 @@ public class ClientHandler implements Runnable {
     // send message by server to receiving client
     public void sendMessage(String message) {
         writer.println(message);
+        logger.info("Send clients list to all clients");
     }
 
 }

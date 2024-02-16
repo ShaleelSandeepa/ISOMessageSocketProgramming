@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,18 +17,29 @@ public class Client {
     private static final Logger logger = Logger.getLogger(Client.class.getName());
 
     JFrame frame = new JFrame("Chatter App");
-    JPanel topPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-    JTextField textField = new JTextField(40);
-    JTextField messageSendTo = new JTextField("Receiver's name",20);
-    JTextArea messageArea = new JTextArea(30,40);
-    JButton btnSendTo = new JButton("Send To");
-    private JComboBox<String> dropdown = new JComboBox<>(new String[]{"text", "VISA", "MASTER"});
+    //panel 1
+    JPanel topPanel = new JPanel(new FlowLayout(FlowLayout.LEADING));
+    JPanel topPanelField1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
+    JPanel topPanelField2 = new JPanel(new FlowLayout(FlowLayout.LEFT));
+    JButton btnSendTo = new JButton("Send To :");
+    JButton btnMessageType = new JButton("Message Type :");
+    private JComboBox<String> dropdownMessageType = new JComboBox<>(new String[]{"Text", "VISA", "MASTER"});
+    private JComboBox<String> clientsDropdown = new JComboBox<>(new String[]{"Receiver"});
+    // panel 2
+    JPanel secondPanel = new JPanel(new FlowLayout(FlowLayout.LEADING));
+    JPanel secondPanelField2 = new JPanel(new FlowLayout(FlowLayout.LEFT));
+    JCheckBox checkBoxBroadcast = new JCheckBox("Broadcast");
+    JTextField textField = new JTextField(45);
+    // panel 3
+    JPanel thirdPanel = new JPanel(new FlowLayout(FlowLayout.LEADING));
+    JTextArea messageArea = new JTextArea(20,50);
 
     BufferedReader consoleReader;
     BufferedReader serverReader;
     PrintWriter writer;
 
     String sendMessage;
+    private static String userName;
 
     public Client() {
 
@@ -38,34 +51,71 @@ public class Client {
             logger.log(Level.SEVERE, "Error setting up file handler: " + e.getMessage(), e);
         }
 
-        topPanel.add(btnSendTo);
-        topPanel.add(messageSendTo);
-        topPanel.add(dropdown);
+        topPanel.setLayout(new BorderLayout());
+        topPanelField1.setLayout(new FlowLayout(FlowLayout.LEFT));
+        topPanelField1.add(btnSendTo);
+        topPanelField1.add(clientsDropdown);
+        topPanelField2.setLayout(new FlowLayout(FlowLayout.RIGHT));
+        topPanelField2.add(btnMessageType);
+        topPanelField2.add(dropdownMessageType);
+        topPanel.add(topPanelField1, BorderLayout.WEST);
+        topPanel.add(topPanelField2, BorderLayout.EAST);
+        clientsDropdown.setPreferredSize(new Dimension(150, 25));
+
+        secondPanel.setLayout(new BorderLayout());
+        secondPanelField2.setLayout(new FlowLayout(FlowLayout.LEFT));
+        secondPanelField2.add(textField);
+        textField.setPreferredSize(new Dimension(0, 25));
         textField.setEditable(false);
+        secondPanel.add(checkBoxBroadcast, BorderLayout.WEST);
+        secondPanel.add(secondPanelField2, BorderLayout.EAST);
+
+        thirdPanel.setPreferredSize(new Dimension((messageArea.getPreferredSize().width+12), (messageArea.getPreferredSize().height+12)));
+        thirdPanel.add(new JScrollPane(messageArea), BorderLayout.CENTER);
         messageArea.setEditable(false);
-        messageSendTo.setEditable(false);
-        frame.getContentPane().add(topPanel, "North");
-        frame.getContentPane().add(textField, "Center");
-        frame.getContentPane().add(new JScrollPane(messageArea), "South");
+
+        frame.add(topPanel, BorderLayout.NORTH);
+        frame.add(secondPanel, BorderLayout.CENTER);
+        frame.add(thirdPanel, BorderLayout.SOUTH);
         frame.pack();
 
         textField.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 sendMessage = textField.getText();
-                String receiver = messageSendTo.getText();
+                String receiver = clientsDropdown.getItemAt(clientsDropdown.getSelectedIndex());
 
                 // send typed message to the server
-                writer.println(dropdown.getSelectedIndex() + receiver + ": " + sendMessage);
+                if (checkBoxBroadcast.isSelected()) {
+                    writer.println(dropdownMessageType.getSelectedIndex() + "BROADCAST" + ": " + sendMessage);
+                } else {
+                    writer.println(dropdownMessageType.getSelectedIndex() + receiver + ": " + sendMessage);
+                }
                 // append sent message to the message area
-                if (!messageSendTo.getText().equals("Receiver's name")) {
-                    messageArea.append("To " + messageSendTo.getText() + ": " + sendMessage + "\n");
+                if (!receiver.equals("Receiver") || !receiver.equals(userName)) {
+                    if (checkBoxBroadcast.isSelected()) {
+                        messageArea.append("To " + "all" + ": " + sendMessage + "\n");
+                    } else {
+                        messageArea.append("To " + receiver + ": " + sendMessage + "\n");
+                    }
                 }
                 textField.setText("");
                 logger.info("Sent message to " + receiver + ": " + sendMessage);
             }
         });
 
+        checkBoxBroadcast.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (checkBoxBroadcast.isSelected()) {
+                    logger.info("Broadcast selected");
+                    clientsDropdown.setEnabled(false);
+                } else {
+                    logger.info("Broadcast unselected");
+                    clientsDropdown.setEnabled(true);
+                }
+            }
+        });
     }
 
     private String getServerAddress() {
@@ -88,30 +138,6 @@ public class Client {
         return name;
     }
 
-    private String getAllClients() throws IOException {
-
-        writer.println("REQUESTCLIENTS");
-        String clients = serverReader.readLine();
-        logger.info("Received list of clients: " + clients);
-        return clients;
-    }
-
-    private void openClientsFrame() throws IOException {
-        JFrame newFrame = new JFrame("Users");
-        JTextField clients = new JTextField("",20);
-        clients.setEditable(false);
-        newFrame.setSize(300, 200);
-
-        clients.setText(getAllClients());
-        System.out.println(getAllClients());
-
-        newFrame.getContentPane().add(new JScrollPane(clients), "North");
-        newFrame.pack();
-
-        newFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        newFrame.setVisible(true);
-    }
-
     public static void main(String[] args) {
 
         // create new client object for trigger swing UI
@@ -126,17 +152,19 @@ public class Client {
             client.serverReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             client.writer = new PrintWriter(socket.getOutputStream(), true);
 
-            String userName = client.getName();
+            userName = client.getName();
             // pass username to server for validate
             client.writer.println(userName);
             logger.info("Pass username '" + userName + "' to server for validate");
 
-            // check username accepted by the server
-            if (client.serverReader.readLine().equals("ACCEPTED")) {
+            // check if username accepted by the server
+            if (client.serverReader.readLine().startsWith("ACCEPTED")) {
                 logger.info("Username '" + userName + "' accepted by server");
                 client.frame.setTitle("Chatter App | " + userName);
                 client.textField.setEditable(true);
-                client.messageSendTo.setEditable(true);
+
+                client.writer.println("REQUEST");
+
             }
 
             // create new thread for listening receiving messages
@@ -168,6 +196,16 @@ public class Client {
                                 String decodedMaster = master.getDecodedMsg().toString();
                                 client.messageArea.append(sender + decodedMaster + "\n");
                                 logger.info("MASTER ISO8583 Message successfully decoded");
+
+                            } else if (message.startsWith("USER")) {
+                                client.clientsDropdown.removeAllItems();
+                                String users = message.substring(message.indexOf("[") + 1, message.indexOf("]"));
+                                // Split the string based on comma
+                                String[] usersArray = users.split(", ");
+
+                                for (String user : usersArray) {
+                                    client.clientsDropdown.addItem(user);
+                                }
                             }
                         }
                     }
@@ -175,6 +213,23 @@ public class Client {
                     logger.log(Level.SEVERE, "Error received message: " + e.getMessage(), e);
                 }
             }).start();
+
+//            new Thread(() -> {
+//                try {
+//                    logger.info("Receiver Thread started");
+//                    while (true) {
+//                        String clientList = client.serverReader.readLine();
+//                        if (clientList.startsWith("USER")) {
+////                           client.clientsDropdown.addItem(clientList.substring(8));
+////                           client.messageArea.append(clientList.substring(4));
+//                            logger.info(clientList);
+//                        }
+//                    }
+//
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            }).start();
 
             System.out.println("Type Exit to disconnect");
             while (true) {
