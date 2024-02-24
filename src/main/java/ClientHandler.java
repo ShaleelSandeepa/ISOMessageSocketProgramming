@@ -22,7 +22,6 @@ public class ClientHandler implements Runnable {
 
 
         // Configure logger with file handler
-        //            fileHandler = new FileHandler("server.log", true); // true for append mode
         this.fileHandler = Server.fileHandler;
         fileHandler.setLevel(Level.ALL);
         logger.addHandler(fileHandler);

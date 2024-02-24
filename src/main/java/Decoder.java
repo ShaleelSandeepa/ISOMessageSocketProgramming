@@ -3,10 +3,8 @@ import org.jpos.iso.ISOMsg;
 import org.jpos.iso.ISOUtil;
 import org.jpos.iso.packager.GenericPackager;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -19,7 +17,6 @@ public class Decoder {
 
     public Decoder(String packager, String isoMessageBytes) {
 
-        //            Client.fileHandler = new FileHandler("client.log", true); // true for append mode
         Client.fileHandler.setLevel(Level.ALL);
         logger.addHandler(Client.fileHandler);
 
