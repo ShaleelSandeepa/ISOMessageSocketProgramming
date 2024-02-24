@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-02-24T12:30:36.876509600Z</date>
+  <millis>1708777836876</millis>
+  <nanos>509600</nanos>
+  <sequence>0</sequence>
+  <logger>Client</logger>
+  <level>INFO</level>
+  <class>Client</class>
+  <method>getName</method>
+  <thread>1</thread>
+  <message>Username chosen: Shaleel</message>
+</record>
+<record>
+  <date>2024-02-24T12:30:36.885549100Z</date>
+  <millis>1708777836885</millis>
+  <nanos>549100</nanos>
+  <sequence>1</sequence>
+  <logger>Client</logger>
+  <level>INFO</level>
+  <class>Client</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Pass username 'Shaleel' to server for validate</message>
+</record>
+<record>
+  <date>2024-02-24T12:30:36.885549100Z</date>
+  <millis>1708777836885</millis>
+  <nanos>549100</nanos>
+  <sequence>2</sequence>
+  <logger>Client</logger>
+  <level>INFO</level>
+  <class>Client</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Username 'Shaleel' accepted by server</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:17.342922900Z</date>
+  <millis>1708777997342</millis>
+  <nanos>922900</nanos>
+  <sequence>3</sequence>
+  <logger>Client</logger>
+  <level>INFO</level>
+  <class>Client</class>
+  <method>lambda$main$0</method>
+  <thread>24</thread>
+  <message>Append message to message area</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:35.769154300Z</date>
+  <millis>1708778015769</millis>
+  <nanos>154300</nanos>
+  <sequence>4</sequence>
+  <logger>Client</logger>
+  <level>INFO</level>
+  <class>Client</class>
+  <method>lambda$main$0</method>
+  <thread>24</thread>
+  <message>Append message to message area</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:45.197234100Z</date>
+  <millis>1708778025197</millis>
+  <nanos>234100</nanos>
+  <sequence>5</sequence>
+  <logger>Client</logger>
+  <level>INFO</level>
+  <class>Client$1</class>
+  <method>actionPerformed</method>
+  <thread>21</thread>
+  <message>Sent message to Thamindu: hi thamindu</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:58.328056500Z</date>
+  <millis>1708778038328</millis>
+  <nanos>56500</nanos>
+  <sequence>6</sequence>
+  <logger>Client</logger>
+  <level>INFO</level>
+  <class>Client$1</class>
+  <method>actionPerformed</method>
+  <thread>21</thread>
+  <message>Sent message to Thamindu: 0120F22464814EF0801600000000000000041048901120577277190000000000000000000215083613004694290159470702010051064761350007010004C002F0F1F4F0F4F6F0F8F0F0F4F6F9F4F0F5F5F4F9F2F8F5E3C5D9D4C9C4F0F1C3C1D9C440C1C3C3C5D7E3D6D940F1C1C3D8E4C9D9C5D940E2899587819796998540404040404040E2899587819796998540404040E2C701F10702050900000005104000000000000000030404630973091407900000000290201D0080100000000000060101042812340000000FA07020317500000000F1</message>
+</record>
+<record>
+  <date>2024-02-24T12:34:10.045228300Z</date>
+  <millis>1708778050045</millis>
+  <nanos>228300</nanos>
+  <sequence>7</sequence>
+  <logger>Client</logger>
+  <level>INFO</level>
+  <class>Client$1</class>
+  <method>actionPerformed</method>
+  <thread>21</thread>
+  <message>Sent message to Janith: F0F1F0F0723C460128E18208F1F6F5F3F5F9F2F7F0F3F0F3F2F8F3F6F8F8F0F0F0F0F0F0F0F0F0F0F0F0F1F7F0F0F0F0F0F4F1F1F1F9F0F5F0F3F0F0F1F4F0F2F0F0F3F5F0F3F0F4F1F2F2F6F1F1F5F5F4F1F0F5F2F0F0F0F0F6F0F2F2F0F5F3F3F2F5F3F5F9F2F7F0F3F0F3F2F8F3F6F8F87EF2F6F1F1F2F2F1F1F0F6F3F0F0F8F7F3F1F0F1F1F9F0F0F1F4F0F2F4F0F2F0F3F3F4F2F0F0F0F0F0F0F0F0F9F9F1F3F0F0F0D296A3A381A68140D38195928140C68993938995874040D296A3A381A68140404040404040D3D2C1F0F1F0D9F6F1F0F5F0F0F0F0F1F1F4F4F1F4F09F2701809F10120114A04001220000000000000000000000FF9F3704DC2E149F9F36020006950500000080009A032304129C01009F02060000001700005F2A020144820239009F1A0201449F03060000000000009F3303E0B8C89F34031E03009F3501229F1E0830343730303732378407A00000000410109F090200029F5301529F2608E416FF759648C229F0F1F6F0F0F1F0F0F1F0F0F0F0F3F0F0F1F4F4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-02-24T12:45:40.845314600Z</date>
+  <millis>1708778740845</millis>
+  <nanos>314600</nanos>
+  <sequence>0</sequence>
+  <logger>Client</logger>
+  <level>INFO</level>
+  <class>Client</class>
+  <method>getName</method>
+  <thread>1</thread>
+  <message>Username chosen: Shaleel</message>
+</record>
+<record>
+  <date>2024-02-24T12:45:40.860416400Z</date>
+  <millis>1708778740860</millis>
+  <nanos>416400</nanos>
+  <sequence>1</sequence>
+  <logger>Client</logger>
+  <level>INFO</level>
+  <class>Client</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Pass username 'Shaleel' to server for validate</message>
+</record>
+<record>
+  <date>2024-02-24T12:45:40.860416400Z</date>
+  <millis>1708778740860</millis>
+  <nanos>416400</nanos>
+  <sequence>2</sequence>
+  <logger>Client</logger>
+  <level>INFO</level>
+  <class>Client</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Username 'Shaleel' accepted by server</message>
+</record>
+</log>

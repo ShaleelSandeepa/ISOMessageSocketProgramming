@@ -40,11 +40,12 @@ public class Client {
 
     String sendMessage;
     private static String userName;
+    public static FileHandler fileHandler;
 
     public Client() {
 
         try {
-            FileHandler fileHandler = new FileHandler("program.log", true); // true for append mode
+            fileHandler = new FileHandler("client.log", true); // true for append mode
             fileHandler.setLevel(Level.ALL);
             logger.addHandler(fileHandler);
         } catch (IOException e) {

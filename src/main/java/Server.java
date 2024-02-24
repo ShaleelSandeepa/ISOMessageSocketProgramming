@@ -11,11 +11,12 @@ public class Server {
     public static Map<String, ClientHandler> clients = new HashMap<>();
     private static final Logger logger = Logger.getLogger(Server.class.getName());
     private static ClientHandler clientHandler;
+    public static FileHandler fileHandler;
 
     static {
         // Configure logger with file handler
         try {
-            FileHandler fileHandler = new FileHandler("program.log", true);
+            fileHandler = new FileHandler("server.log", true);
             fileHandler.setLevel(Level.ALL);
             logger.addHandler(fileHandler);
         } catch (IOException e) {

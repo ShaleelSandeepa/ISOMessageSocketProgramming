@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-02-24T12:30:27.834851600Z</date>
+  <millis>1708777827834</millis>
+  <nanos>851600</nanos>
+  <sequence>0</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Server is running on port 9002</message>
+</record>
+<record>
+  <date>2024-02-24T12:30:32.759784Z</date>
+  <millis>1708777832759</millis>
+  <nanos>784000</nanos>
+  <sequence>1</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Start new Thread for clientHandler</message>
+</record>
+<record>
+  <date>2024-02-24T12:30:36.885549100Z</date>
+  <millis>1708777836885</millis>
+  <nanos>549100</nanos>
+  <sequence>2</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>addClient</method>
+  <thread>17</thread>
+  <message>Client added: Shaleel</message>
+</record>
+<record>
+  <date>2024-02-24T12:30:36.885549100Z</date>
+  <millis>1708777836885</millis>
+  <nanos>549100</nanos>
+  <sequence>3</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>User 'Shaleel' connected.</message>
+</record>
+<record>
+  <date>2024-02-24T12:30:36.895874900Z</date>
+  <millis>1708777836895</millis>
+  <nanos>874900</nanos>
+  <sequence>4</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:31:05.098328700Z</date>
+  <millis>1708777865098</millis>
+  <nanos>328700</nanos>
+  <sequence>5</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Start new Thread for clientHandler</message>
+</record>
+<record>
+  <date>2024-02-24T12:31:09.947626100Z</date>
+  <millis>1708777869947</millis>
+  <nanos>626100</nanos>
+  <sequence>6</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>addClient</method>
+  <thread>18</thread>
+  <message>Client added: Janith</message>
+</record>
+<record>
+  <date>2024-02-24T12:31:09.947626100Z</date>
+  <millis>1708777869947</millis>
+  <nanos>626100</nanos>
+  <sequence>7</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>User 'Janith' connected.</message>
+</record>
+<record>
+  <date>2024-02-24T12:31:09.947626100Z</date>
+  <millis>1708777869947</millis>
+  <nanos>626100</nanos>
+  <sequence>7</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>User 'Janith' connected.</message>
+</record>
+<record>
+  <date>2024-02-24T12:31:09.947626100Z</date>
+  <millis>1708777869947</millis>
+  <nanos>626100</nanos>
+  <sequence>8</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>18</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:31:09.947626100Z</date>
+  <millis>1708777869947</millis>
+  <nanos>626100</nanos>
+  <sequence>8</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>18</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:31:09.958296Z</date>
+  <millis>1708777869958</millis>
+  <nanos>296000</nanos>
+  <sequence>9</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>18</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:31:09.958296Z</date>
+  <millis>1708777869958</millis>
+  <nanos>296000</nanos>
+  <sequence>9</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>18</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:32:07.239165500Z</date>
+  <millis>1708777927239</millis>
+  <nanos>165500</nanos>
+  <sequence>10</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Start new Thread for clientHandler</message>
+</record>
+<record>
+  <date>2024-02-24T12:32:48.986783900Z</date>
+  <millis>1708777968986</millis>
+  <nanos>783900</nanos>
+  <sequence>11</sequence>
+  <logger>ClientHandler</logger>
+  <level>SEVERE</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>Error in client handling: Connection reset</message>
+  <exception>
+    <message>java.net.SocketException: Connection reset</message>
+    <frame>
+      <class>sun.nio.ch.NioSocketImpl</class>
+      <method>implRead</method>
+      <line>323</line>
+    </frame>
+    <frame>
+      <class>sun.nio.ch.NioSocketImpl</class>
+      <method>read</method>
+      <line>350</line>
+    </frame>
+    <frame>
+      <class>sun.nio.ch.NioSocketImpl$1</class>
+      <method>read</method>
+      <line>803</line>
+    </frame>
+    <frame>
+      <class>java.net.Socket$SocketInputStream</class>
+      <method>read</method>
+      <line>966</line>
+    </frame>
+    <frame>
+      <class>sun.nio.cs.StreamDecoder</class>
+      <method>readBytes</method>
+      <line>270</line>
+    </frame>
+    <frame>
+      <class>sun.nio.cs.StreamDecoder</class>
+      <method>implRead</method>
+      <line>313</line>
+    </frame>
+    <frame>
+      <class>sun.nio.cs.StreamDecoder</class>
+      <method>read</method>
+      <line>188</line>
+    </frame>
+    <frame>
+      <class>java.io.InputStreamReader</class>
+      <method>read</method>
+      <line>177</line>
+    </frame>
+    <frame>
+      <class>java.io.BufferedReader</class>
+      <method>fill</method>
+      <line>162</line>
+    </frame>
+    <frame>
+      <class>java.io.BufferedReader</class>
+      <method>readLine</method>
+      <line>329</line>
+    </frame>
+    <frame>
+      <class>java.io.BufferedReader</class>
+      <method>readLine</method>
+      <line>396</line>
+    </frame>
+    <frame>
+      <class>ClientHandler</class>
+      <method>run</method>
+      <line>50</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>833</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2024-02-24T12:32:48.986783900Z</date>
+  <millis>1708777968986</millis>
+  <nanos>783900</nanos>
+  <sequence>11</sequence>
+  <logger>ClientHandler</logger>
+  <level>SEVERE</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>Error in client handling: Connection reset</message>
+  <exception>
+    <message>java.net.SocketException: Connection reset</message>
+    <frame>
+      <class>sun.nio.ch.NioSocketImpl</class>
+      <method>implRead</method>
+      <line>323</line>
+    </frame>
+    <frame>
+      <class>sun.nio.ch.NioSocketImpl</class>
+      <method>read</method>
+      <line>350</line>
+    </frame>
+    <frame>
+      <class>sun.nio.ch.NioSocketImpl$1</class>
+      <method>read</method>
+      <line>803</line>
+    </frame>
+    <frame>
+      <class>java.net.Socket$SocketInputStream</class>
+      <method>read</method>
+      <line>966</line>
+    </frame>
+    <frame>
+      <class>sun.nio.cs.StreamDecoder</class>
+      <method>readBytes</method>
+      <line>270</line>
+    </frame>
+    <frame>
+      <class>sun.nio.cs.StreamDecoder</class>
+      <method>implRead</method>
+      <line>313</line>
+    </frame>
+    <frame>
+      <class>sun.nio.cs.StreamDecoder</class>
+      <method>read</method>
+      <line>188</line>
+    </frame>
+    <frame>
+      <class>java.io.InputStreamReader</class>
+      <method>read</method>
+      <line>177</line>
+    </frame>
+    <frame>
+      <class>java.io.BufferedReader</class>
+      <method>fill</method>
+      <line>162</line>
+    </frame>
+    <frame>
+      <class>java.io.BufferedReader</class>
+      <method>readLine</method>
+      <line>329</line>
+    </frame>
+    <frame>
+      <class>java.io.BufferedReader</class>
+      <method>readLine</method>
+      <line>396</line>
+    </frame>
+    <frame>
+      <class>ClientHandler</class>
+      <method>run</method>
+      <line>50</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>833</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2024-02-24T12:32:48.986783900Z</date>
+  <millis>1708777968986</millis>
+  <nanos>783900</nanos>
+  <sequence>11</sequence>
+  <logger>ClientHandler</logger>
+  <level>SEVERE</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>Error in client handling: Connection reset</message>
+  <exception>
+    <message>java.net.SocketException: Connection reset</message>
+    <frame>
+      <class>sun.nio.ch.NioSocketImpl</class>
+      <method>implRead</method>
+      <line>323</line>
+    </frame>
+    <frame>
+      <class>sun.nio.ch.NioSocketImpl</class>
+      <method>read</method>
+      <line>350</line>
+    </frame>
+    <frame>
+      <class>sun.nio.ch.NioSocketImpl$1</class>
+      <method>read</method>
+      <line>803</line>
+    </frame>
+    <frame>
+      <class>java.net.Socket$SocketInputStream</class>
+      <method>read</method>
+      <line>966</line>
+    </frame>
+    <frame>
+      <class>sun.nio.cs.StreamDecoder</class>
+      <method>readBytes</method>
+      <line>270</line>
+    </frame>
+    <frame>
+      <class>sun.nio.cs.StreamDecoder</class>
+      <method>implRead</method>
+      <line>313</line>
+    </frame>
+    <frame>
+      <class>sun.nio.cs.StreamDecoder</class>
+      <method>read</method>
+      <line>188</line>
+    </frame>
+    <frame>
+      <class>java.io.InputStreamReader</class>
+      <method>read</method>
+      <line>177</line>
+    </frame>
+    <frame>
+      <class>java.io.BufferedReader</class>
+      <method>fill</method>
+      <line>162</line>
+    </frame>
+    <frame>
+      <class>java.io.BufferedReader</class>
+      <method>readLine</method>
+      <line>329</line>
+    </frame>
+    <frame>
+      <class>java.io.BufferedReader</class>
+      <method>readLine</method>
+      <line>396</line>
+    </frame>
+    <frame>
+      <class>ClientHandler</class>
+      <method>run</method>
+      <line>50</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>833</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2024-02-24T12:32:54.802912700Z</date>
+  <millis>1708777974802</millis>
+  <nanos>912700</nanos>
+  <sequence>12</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Start new Thread for clientHandler</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.087785500Z</date>
+  <millis>1708777985087</millis>
+  <nanos>785500</nanos>
+  <sequence>13</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>addClient</method>
+  <thread>20</thread>
+  <message>Client added: Thamindu</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.087785500Z</date>
+  <millis>1708777985087</millis>
+  <nanos>785500</nanos>
+  <sequence>14</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>User 'Thamindu' connected.</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.087785500Z</date>
+  <millis>1708777985087</millis>
+  <nanos>785500</nanos>
+  <sequence>14</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>User 'Thamindu' connected.</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.087785500Z</date>
+  <millis>1708777985087</millis>
+  <nanos>785500</nanos>
+  <sequence>14</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>User 'Thamindu' connected.</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.087785500Z</date>
+  <millis>1708777985087</millis>
+  <nanos>785500</nanos>
+  <sequence>14</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>User 'Thamindu' connected.</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.096826200Z</date>
+  <millis>1708777985096</millis>
+  <nanos>826200</nanos>
+  <sequence>15</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.096826200Z</date>
+  <millis>1708777985096</millis>
+  <nanos>826200</nanos>
+  <sequence>15</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.096826200Z</date>
+  <millis>1708777985096</millis>
+  <nanos>826200</nanos>
+  <sequence>15</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.096826200Z</date>
+  <millis>1708777985096</millis>
+  <nanos>826200</nanos>
+  <sequence>15</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.097783400Z</date>
+  <millis>1708777985097</millis>
+  <nanos>783400</nanos>
+  <sequence>16</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.097783400Z</date>
+  <millis>1708777985097</millis>
+  <nanos>783400</nanos>
+  <sequence>16</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.097783400Z</date>
+  <millis>1708777985097</millis>
+  <nanos>783400</nanos>
+  <sequence>16</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.097783400Z</date>
+  <millis>1708777985097</millis>
+  <nanos>783400</nanos>
+  <sequence>16</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.098641400Z</date>
+  <millis>1708777985098</millis>
+  <nanos>641400</nanos>
+  <sequence>17</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.098641400Z</date>
+  <millis>1708777985098</millis>
+  <nanos>641400</nanos>
+  <sequence>17</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.098641400Z</date>
+  <millis>1708777985098</millis>
+  <nanos>641400</nanos>
+  <sequence>17</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:05.098641400Z</date>
+  <millis>1708777985098</millis>
+  <nanos>641400</nanos>
+  <sequence>17</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:17.332276800Z</date>
+  <millis>1708777997332</millis>
+  <nanos>276800</nanos>
+  <sequence>18</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:17.332276800Z</date>
+  <millis>1708777997332</millis>
+  <nanos>276800</nanos>
+  <sequence>18</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:17.332276800Z</date>
+  <millis>1708777997332</millis>
+  <nanos>276800</nanos>
+  <sequence>18</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:17.332276800Z</date>
+  <millis>1708777997332</millis>
+  <nanos>276800</nanos>
+  <sequence>18</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:17.332276800Z</date>
+  <millis>1708777997332</millis>
+  <nanos>276800</nanos>
+  <sequence>19</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:17.332276800Z</date>
+  <millis>1708777997332</millis>
+  <nanos>276800</nanos>
+  <sequence>19</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:17.332276800Z</date>
+  <millis>1708777997332</millis>
+  <nanos>276800</nanos>
+  <sequence>19</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:17.332276800Z</date>
+  <millis>1708777997332</millis>
+  <nanos>276800</nanos>
+  <sequence>19</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:17.340239400Z</date>
+  <millis>1708777997340</millis>
+  <nanos>239400</nanos>
+  <sequence>20</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Message from Thamindu to BROADCAST: hi all</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:17.340239400Z</date>
+  <millis>1708777997340</millis>
+  <nanos>239400</nanos>
+  <sequence>20</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Message from Thamindu to BROADCAST: hi all</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:17.340239400Z</date>
+  <millis>1708777997340</millis>
+  <nanos>239400</nanos>
+  <sequence>20</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Message from Thamindu to BROADCAST: hi all</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:17.340239400Z</date>
+  <millis>1708777997340</millis>
+  <nanos>239400</nanos>
+  <sequence>20</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Message from Thamindu to BROADCAST: hi all</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:28.049208200Z</date>
+  <millis>1708778008049</millis>
+  <nanos>208200</nanos>
+  <sequence>21</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:28.049208200Z</date>
+  <millis>1708778008049</millis>
+  <nanos>208200</nanos>
+  <sequence>21</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:28.049208200Z</date>
+  <millis>1708778008049</millis>
+  <nanos>208200</nanos>
+  <sequence>21</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:28.049208200Z</date>
+  <millis>1708778008049</millis>
+  <nanos>208200</nanos>
+  <sequence>21</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:28.055840Z</date>
+  <millis>1708778008055</millis>
+  <nanos>840000</nanos>
+  <sequence>22</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Message sent to Janith from Thamindu: hi janith</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:28.056937300Z</date>
+  <millis>1708778008056</millis>
+  <nanos>937300</nanos>
+  <sequence>23</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Message from Thamindu to Janith: hi janith</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:28.056937300Z</date>
+  <millis>1708778008056</millis>
+  <nanos>937300</nanos>
+  <sequence>23</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Message from Thamindu to Janith: hi janith</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:28.056937300Z</date>
+  <millis>1708778008056</millis>
+  <nanos>937300</nanos>
+  <sequence>23</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Message from Thamindu to Janith: hi janith</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:28.056937300Z</date>
+  <millis>1708778008056</millis>
+  <nanos>937300</nanos>
+  <sequence>23</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Message from Thamindu to Janith: hi janith</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:35.753278900Z</date>
+  <millis>1708778015753</millis>
+  <nanos>278900</nanos>
+  <sequence>24</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:35.753278900Z</date>
+  <millis>1708778015753</millis>
+  <nanos>278900</nanos>
+  <sequence>24</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:35.753278900Z</date>
+  <millis>1708778015753</millis>
+  <nanos>278900</nanos>
+  <sequence>24</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:35.753278900Z</date>
+  <millis>1708778015753</millis>
+  <nanos>278900</nanos>
+  <sequence>24</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:35.769154300Z</date>
+  <millis>1708778015769</millis>
+  <nanos>154300</nanos>
+  <sequence>25</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>sendMessage</method>
+  <thread>20</thread>
+  <message>Message sent to Shaleel from Thamindu: hi shaleel</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:35.770413400Z</date>
+  <millis>1708778015770</millis>
+  <nanos>413400</nanos>
+  <sequence>26</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Message from Thamindu to Shaleel: hi shaleel</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:35.770413400Z</date>
+  <millis>1708778015770</millis>
+  <nanos>413400</nanos>
+  <sequence>26</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Message from Thamindu to Shaleel: hi shaleel</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:35.770413400Z</date>
+  <millis>1708778015770</millis>
+  <nanos>413400</nanos>
+  <sequence>26</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Message from Thamindu to Shaleel: hi shaleel</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:35.770413400Z</date>
+  <millis>1708778015770</millis>
+  <nanos>413400</nanos>
+  <sequence>26</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Message from Thamindu to Shaleel: hi shaleel</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:45.194053400Z</date>
+  <millis>1708778025194</millis>
+  <nanos>53400</nanos>
+  <sequence>27</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:45.194053400Z</date>
+  <millis>1708778025194</millis>
+  <nanos>53400</nanos>
+  <sequence>27</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:45.194053400Z</date>
+  <millis>1708778025194</millis>
+  <nanos>53400</nanos>
+  <sequence>27</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:45.194053400Z</date>
+  <millis>1708778025194</millis>
+  <nanos>53400</nanos>
+  <sequence>27</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:45.196737Z</date>
+  <millis>1708778025196</millis>
+  <nanos>737000</nanos>
+  <sequence>28</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Message sent to Thamindu from Shaleel: hi thamindu</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:45.197234100Z</date>
+  <millis>1708778025197</millis>
+  <nanos>234100</nanos>
+  <sequence>29</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Message from Shaleel to Thamindu: hi thamindu</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:45.197234100Z</date>
+  <millis>1708778025197</millis>
+  <nanos>234100</nanos>
+  <sequence>29</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Message from Shaleel to Thamindu: hi thamindu</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:45.197234100Z</date>
+  <millis>1708778025197</millis>
+  <nanos>234100</nanos>
+  <sequence>29</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Message from Shaleel to Thamindu: hi thamindu</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:45.197234100Z</date>
+  <millis>1708778025197</millis>
+  <nanos>234100</nanos>
+  <sequence>29</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Message from Shaleel to Thamindu: hi thamindu</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:58.327252700Z</date>
+  <millis>1708778038327</millis>
+  <nanos>252700</nanos>
+  <sequence>30</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:58.327252700Z</date>
+  <millis>1708778038327</millis>
+  <nanos>252700</nanos>
+  <sequence>30</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:58.327252700Z</date>
+  <millis>1708778038327</millis>
+  <nanos>252700</nanos>
+  <sequence>30</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:58.327252700Z</date>
+  <millis>1708778038327</millis>
+  <nanos>252700</nanos>
+  <sequence>30</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:58.328747600Z</date>
+  <millis>1708778038328</millis>
+  <nanos>747600</nanos>
+  <sequence>31</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Message sent to Thamindu from Shaleel: 0120F22464814EF0801600000000000000041048901120577277190000000000000000000215083613004694290159470702010051064761350007010004C002F0F1F4F0F4F6F0F8F0F0F4F6F9F4F0F5F5F4F9F2F8F5E3C5D9D4C9C4F0F1C3C1D9C440C1C3C3C5D7E3D6D940F1C1C3D8E4C9D9C5D940E2899587819796998540404040404040E2899587819796998540404040E2C701F10702050900000005104000000000000000030404630973091407900000000290201D0080100000000000060101042812340000000FA07020317500000000F1</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:58.329739500Z</date>
+  <millis>1708778038329</millis>
+  <nanos>739500</nanos>
+  <sequence>32</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Message from Shaleel to Thamindu: 0120F22464814EF0801600000000000000041048901120577277190000000000000000000215083613004694290159470702010051064761350007010004C002F0F1F4F0F4F6F0F8F0F0F4F6F9F4F0F5F5F4F9F2F8F5E3C5D9D4C9C4F0F1C3C1D9C440C1C3C3C5D7E3D6D940F1C1C3D8E4C9D9C5D940E2899587819796998540404040404040E2899587819796998540404040E2C701F10702050900000005104000000000000000030404630973091407900000000290201D0080100000000000060101042812340000000FA07020317500000000F1</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:58.329739500Z</date>
+  <millis>1708778038329</millis>
+  <nanos>739500</nanos>
+  <sequence>32</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Message from Shaleel to Thamindu: 0120F22464814EF0801600000000000000041048901120577277190000000000000000000215083613004694290159470702010051064761350007010004C002F0F1F4F0F4F6F0F8F0F0F4F6F9F4F0F5F5F4F9F2F8F5E3C5D9D4C9C4F0F1C3C1D9C440C1C3C3C5D7E3D6D940F1C1C3D8E4C9D9C5D940E2899587819796998540404040404040E2899587819796998540404040E2C701F10702050900000005104000000000000000030404630973091407900000000290201D0080100000000000060101042812340000000FA07020317500000000F1</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:58.329739500Z</date>
+  <millis>1708778038329</millis>
+  <nanos>739500</nanos>
+  <sequence>32</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Message from Shaleel to Thamindu: 0120F22464814EF0801600000000000000041048901120577277190000000000000000000215083613004694290159470702010051064761350007010004C002F0F1F4F0F4F6F0F8F0F0F4F6F9F4F0F5F5F4F9F2F8F5E3C5D9D4C9C4F0F1C3C1D9C440C1C3C3C5D7E3D6D940F1C1C3D8E4C9D9C5D940E2899587819796998540404040404040E2899587819796998540404040E2C701F10702050900000005104000000000000000030404630973091407900000000290201D0080100000000000060101042812340000000FA07020317500000000F1</message>
+</record>
+<record>
+  <date>2024-02-24T12:33:58.329739500Z</date>
+  <millis>1708778038329</millis>
+  <nanos>739500</nanos>
+  <sequence>32</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Message from Shaleel to Thamindu: 0120F22464814EF0801600000000000000041048901120577277190000000000000000000215083613004694290159470702010051064761350007010004C002F0F1F4F0F4F6F0F8F0F0F4F6F9F4F0F5F5F4F9F2F8F5E3C5D9D4C9C4F0F1C3C1D9C440C1C3C3C5D7E3D6D940F1C1C3D8E4C9D9C5D940E2899587819796998540404040404040E2899587819796998540404040E2C701F10702050900000005104000000000000000030404630973091407900000000290201D0080100000000000060101042812340000000FA07020317500000000F1</message>
+</record>
+<record>
+  <date>2024-02-24T12:34:10.045228300Z</date>
+  <millis>1708778050045</millis>
+  <nanos>228300</nanos>
+  <sequence>33</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:34:10.045228300Z</date>
+  <millis>1708778050045</millis>
+  <nanos>228300</nanos>
+  <sequence>33</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:34:10.045228300Z</date>
+  <millis>1708778050045</millis>
+  <nanos>228300</nanos>
+  <sequence>33</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:34:10.045228300Z</date>
+  <millis>1708778050045</millis>
+  <nanos>228300</nanos>
+  <sequence>33</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:34:10.045228300Z</date>
+  <millis>1708778050045</millis>
+  <nanos>228300</nanos>
+  <sequence>34</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Message sent to Janith from Shaleel: F0F1F0F0723C460128E18208F1F6F5F3F5F9F2F7F0F3F0F3F2F8F3F6F8F8F0F0F0F0F0F0F0F0F0F0F0F0F1F7F0F0F0F0F0F4F1F1F1F9F0F5F0F3F0F0F1F4F0F2F0F0F3F5F0F3F0F4F1F2F2F6F1F1F5F5F4F1F0F5F2F0F0F0F0F6F0F2F2F0F5F3F3F2F5F3F5F9F2F7F0F3F0F3F2F8F3F6F8F87EF2F6F1F1F2F2F1F1F0F6F3F0F0F8F7F3F1F0F1F1F9F0F0F1F4F0F2F4F0F2F0F3F3F4F2F0F0F0F0F0F0F0F0F9F9F1F3F0F0F0D296A3A381A68140D38195928140C68993938995874040D296A3A381A68140404040404040D3D2C1F0F1F0D9F6F1F0F5F0F0F0F0F1F1F4F4F1F4F09F2701809F10120114A04001220000000000000000000000FF9F3704DC2E149F9F36020006950500000080009A032304129C01009F02060000001700005F2A020144820239009F1A0201449F03060000000000009F3303E0B8C89F34031E03009F3501229F1E0830343730303732378407A00000000410109F090200029F5301529F2608E416FF759648C229F0F1F6F0F0F1F0F0F1F0F0F0F0F3F0F0F1F4F4</message>
+</record>
+<record>
+  <date>2024-02-24T12:34:10.045228300Z</date>
+  <millis>1708778050045</millis>
+  <nanos>228300</nanos>
+  <sequence>35</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Message from Shaleel to Janith: F0F1F0F0723C460128E18208F1F6F5F3F5F9F2F7F0F3F0F3F2F8F3F6F8F8F0F0F0F0F0F0F0F0F0F0F0F0F1F7F0F0F0F0F0F4F1F1F1F9F0F5F0F3F0F0F1F4F0F2F0F0F3F5F0F3F0F4F1F2F2F6F1F1F5F5F4F1F0F5F2F0F0F0F0F6F0F2F2F0F5F3F3F2F5F3F5F9F2F7F0F3F0F3F2F8F3F6F8F87EF2F6F1F1F2F2F1F1F0F6F3F0F0F8F7F3F1F0F1F1F9F0F0F1F4F0F2F4F0F2F0F3F3F4F2F0F0F0F0F0F0F0F0F9F9F1F3F0F0F0D296A3A381A68140D38195928140C68993938995874040D296A3A381A68140404040404040D3D2C1F0F1F0D9F6F1F0F5F0F0F0F0F1F1F4F4F1F4F09F2701809F10120114A04001220000000000000000000000FF9F3704DC2E149F9F36020006950500000080009A032304129C01009F02060000001700005F2A020144820239009F1A0201449F03060000000000009F3303E0B8C89F34031E03009F3501229F1E0830343730303732378407A00000000410109F090200029F5301529F2608E416FF759648C229F0F1F6F0F0F1F0F0F1F0F0F0F0F3F0F0F1F4F4</message>
+</record>
+<record>
+  <date>2024-02-24T12:34:10.045228300Z</date>
+  <millis>1708778050045</millis>
+  <nanos>228300</nanos>
+  <sequence>35</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Message from Shaleel to Janith: F0F1F0F0723C460128E18208F1F6F5F3F5F9F2F7F0F3F0F3F2F8F3F6F8F8F0F0F0F0F0F0F0F0F0F0F0F0F1F7F0F0F0F0F0F4F1F1F1F9F0F5F0F3F0F0F1F4F0F2F0F0F3F5F0F3F0F4F1F2F2F6F1F1F5F5F4F1F0F5F2F0F0F0F0F6F0F2F2F0F5F3F3F2F5F3F5F9F2F7F0F3F0F3F2F8F3F6F8F87EF2F6F1F1F2F2F1F1F0F6F3F0F0F8F7F3F1F0F1F1F9F0F0F1F4F0F2F4F0F2F0F3F3F4F2F0F0F0F0F0F0F0F0F9F9F1F3F0F0F0D296A3A381A68140D38195928140C68993938995874040D296A3A381A68140404040404040D3D2C1F0F1F0D9F6F1F0F5F0F0F0F0F1F1F4F4F1F4F09F2701809F10120114A04001220000000000000000000000FF9F3704DC2E149F9F36020006950500000080009A032304129C01009F02060000001700005F2A020144820239009F1A0201449F03060000000000009F3303E0B8C89F34031E03009F3501229F1E0830343730303732378407A00000000410109F090200029F5301529F2608E416FF759648C229F0F1F6F0F0F1F0F0F1F0F0F0F0F3F0F0F1F4F4</message>
+</record>
+<record>
+  <date>2024-02-24T12:34:10.045228300Z</date>
+  <millis>1708778050045</millis>
+  <nanos>228300</nanos>
+  <sequence>35</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Message from Shaleel to Janith: F0F1F0F0723C460128E18208F1F6F5F3F5F9F2F7F0F3F0F3F2F8F3F6F8F8F0F0F0F0F0F0F0F0F0F0F0F0F1F7F0F0F0F0F0F4F1F1F1F9F0F5F0F3F0F0F1F4F0F2F0F0F3F5F0F3F0F4F1F2F2F6F1F1F5F5F4F1F0F5F2F0F0F0F0F6F0F2F2F0F5F3F3F2F5F3F5F9F2F7F0F3F0F3F2F8F3F6F8F87EF2F6F1F1F2F2F1F1F0F6F3F0F0F8F7F3F1F0F1F1F9F0F0F1F4F0F2F4F0F2F0F3F3F4F2F0F0F0F0F0F0F0F0F9F9F1F3F0F0F0D296A3A381A68140D38195928140C68993938995874040D296A3A381A68140404040404040D3D2C1F0F1F0D9F6F1F0F5F0F0F0F0F1F1F4F4F1F4F09F2701809F10120114A04001220000000000000000000000FF9F3704DC2E149F9F36020006950500000080009A032304129C01009F02060000001700005F2A020144820239009F1A0201449F03060000000000009F3303E0B8C89F34031E03009F3501229F1E0830343730303732378407A00000000410109F090200029F5301529F2608E416FF759648C229F0F1F6F0F0F1F0F0F1F0F0F0F0F3F0F0F1F4F4</message>
+</record>
+<record>
+  <date>2024-02-24T12:34:10.045228300Z</date>
+  <millis>1708778050045</millis>
+  <nanos>228300</nanos>
+  <sequence>35</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Message from Shaleel to Janith: F0F1F0F0723C460128E18208F1F6F5F3F5F9F2F7F0F3F0F3F2F8F3F6F8F8F0F0F0F0F0F0F0F0F0F0F0F0F1F7F0F0F0F0F0F4F1F1F1F9F0F5F0F3F0F0F1F4F0F2F0F0F3F5F0F3F0F4F1F2F2F6F1F1F5F5F4F1F0F5F2F0F0F0F0F6F0F2F2F0F5F3F3F2F5F3F5F9F2F7F0F3F0F3F2F8F3F6F8F87EF2F6F1F1F2F2F1F1F0F6F3F0F0F8F7F3F1F0F1F1F9F0F0F1F4F0F2F4F0F2F0F3F3F4F2F0F0F0F0F0F0F0F0F9F9F1F3F0F0F0D296A3A381A68140D38195928140C68993938995874040D296A3A381A68140404040404040D3D2C1F0F1F0D9F6F1F0F5F0F0F0F0F1F1F4F4F1F4F09F2701809F10120114A04001220000000000000000000000FF9F3704DC2E149F9F36020006950500000080009A032304129C01009F02060000001700005F2A020144820239009F1A0201449F03060000000000009F3303E0B8C89F34031E03009F3501229F1E0830343730303732378407A00000000410109F090200029F5301529F2608E416FF759648C229F0F1F6F0F0F1F0F0F1F0F0F0F0F3F0F0F1F4F4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-02-24T12:45:01.428216600Z</date>
+  <millis>1708778701428</millis>
+  <nanos>216600</nanos>
+  <sequence>0</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Server is running on port 9002</message>
+</record>
+<record>
+  <date>2024-02-24T12:45:36.895090100Z</date>
+  <millis>1708778736895</millis>
+  <nanos>90100</nanos>
+  <sequence>1</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Start new Thread for clientHandler</message>
+</record>
+<record>
+  <date>2024-02-24T12:45:40.860416400Z</date>
+  <millis>1708778740860</millis>
+  <nanos>416400</nanos>
+  <sequence>2</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>addClient</method>
+  <thread>17</thread>
+  <message>Client added: Shaleel</message>
+</record>
+<record>
+  <date>2024-02-24T12:45:40.864927400Z</date>
+  <millis>1708778740864</millis>
+  <nanos>927400</nanos>
+  <sequence>3</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>User 'Shaleel' connected.</message>
+</record>
+<record>
+  <date>2024-02-24T12:45:40.864927400Z</date>
+  <millis>1708778740864</millis>
+  <nanos>927400</nanos>
+  <sequence>4</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>17</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:46:03.789896800Z</date>
+  <millis>1708778763789</millis>
+  <nanos>896800</nanos>
+  <sequence>5</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Start new Thread for clientHandler</message>
+</record>
+<record>
+  <date>2024-02-24T12:46:07.994108200Z</date>
+  <millis>1708778767994</millis>
+  <nanos>108200</nanos>
+  <sequence>6</sequence>
+  <logger>Server</logger>
+  <level>INFO</level>
+  <class>Server</class>
+  <method>addClient</method>
+  <thread>18</thread>
+  <message>Client added: Thamindu</message>
+</record>
+<record>
+  <date>2024-02-24T12:46:07.994108200Z</date>
+  <millis>1708778767994</millis>
+  <nanos>108200</nanos>
+  <sequence>7</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>User 'Thamindu' connected.</message>
+</record>
+<record>
+  <date>2024-02-24T12:46:07.994108200Z</date>
+  <millis>1708778767994</millis>
+  <nanos>108200</nanos>
+  <sequence>7</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>User 'Thamindu' connected.</message>
+</record>
+<record>
+  <date>2024-02-24T12:46:08.012170900Z</date>
+  <millis>1708778768012</millis>
+  <nanos>170900</nanos>
+  <sequence>8</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>18</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:46:08.012170900Z</date>
+  <millis>1708778768012</millis>
+  <nanos>170900</nanos>
+  <sequence>8</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>18</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:46:08.012955Z</date>
+  <millis>1708778768012</millis>
+  <nanos>955000</nanos>
+  <sequence>9</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>18</thread>
+  <message>Send clients list to all clients</message>
+</record>
+<record>
+  <date>2024-02-24T12:46:08.012955Z</date>
+  <millis>1708778768012</millis>
+  <nanos>955000</nanos>
+  <sequence>9</sequence>
+  <logger>ClientHandler</logger>
+  <level>INFO</level>
+  <class>ClientHandler</class>
+  <method>sendMessage</method>
+  <thread>18</thread>
+  <message>Send clients list to all clients</message>
+</record>
+</log>

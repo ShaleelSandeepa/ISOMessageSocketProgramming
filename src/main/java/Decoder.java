@@ -19,13 +19,9 @@ public class Decoder {
 
     public Decoder(String packager, String isoMessageBytes) {
 
-        try {
-            FileHandler fileHandler = new FileHandler("program.log", true); // true for append mode
-            fileHandler.setLevel(Level.ALL);
-            logger.addHandler(fileHandler);
-        } catch (IOException e) {
-            logger.log(Level.SEVERE, "Error setting up file handler: " + e.getMessage(), e);
-        }
+        //            Client.fileHandler = new FileHandler("client.log", true); // true for append mode
+        Client.fileHandler.setLevel(Level.ALL);
+        logger.addHandler(Client.fileHandler);
 
         try {
             this.packager = new GenericPackager(packager);

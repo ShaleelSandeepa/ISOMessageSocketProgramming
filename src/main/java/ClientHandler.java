@@ -13,20 +13,19 @@ public class ClientHandler implements Runnable {
     private final BufferedReader reader;
     private final PrintWriter writer;
     private final Logger logger = Logger.getLogger(ClientHandler.class.getName());
+    private FileHandler fileHandler;
 
     public ClientHandler(Socket clientSocket) throws IOException {
         this.clientSocket = clientSocket;
         this.reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         this.writer = new PrintWriter(clientSocket.getOutputStream(), true);
 
+
         // Configure logger with file handler
-        try {
-            FileHandler fileHandler = new FileHandler("program.log", true); // true for append mode
-            fileHandler.setLevel(Level.ALL);
-            logger.addHandler(fileHandler);
-        } catch (IOException e) {
-            logger.log(Level.SEVERE, "Error setting up file handler: " + e.getMessage(), e);
-        }
+        //            fileHandler = new FileHandler("server.log", true); // true for append mode
+        this.fileHandler = Server.fileHandler;
+        fileHandler.setLevel(Level.ALL);
+        logger.addHandler(fileHandler);
     }
 
     @Override
